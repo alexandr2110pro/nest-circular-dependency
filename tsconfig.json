@@ -1,0 +1,43 @@
+{
+  "extends": "./config/tsconfig.strict",
+  "compilerOptions": {
+    "inlineSourceMap": true,
+    "importHelpers": true,
+    "declaration": true,
+    "listFiles": false,
+    "traceResolution": false,
+    "listEmittedFiles": false,
+    "pretty": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "noLib": false,
+    "lib": [
+      "es2015",
+      "es2016",
+      "es2017"
+    ],
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "es6",
+    "outDir": "bin",
+    "rootDir": "src",
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "include": [
+    "node_modules/@types",
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.e2e.spec.ts",
+    "**/*.test.ts",
+    "**/*.fixture.ts",
+    "**/*.e2e-test.ts",
+    "**/*.spec.ts",
+    "**/*.e2e-spec.ts"
+  ],
+  "compileOnSave": false
+}
